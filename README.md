@@ -1,15 +1,17 @@
 # 📸 Caught – Auto Capture Smiling Face
 
-Automatically captures a photo whenever the user smiles using **Python**, **OpenCV**, and **MediaPipe Face Mesh**.
+An AI-powered Python application that automatically captures a photo when a smile is detected using **MediaPipe Face Mesh** and **OpenCV**.
 
-## ✨ Features
+---
 
-- 😀 Real-time face detection
-- 😊 Smile detection using MediaPipe Face Mesh landmarks
-- 📷 Automatic image capture on smile
-- 🔔 Camera shutter sound after capture
-- ⚡ Fast and lightweight
-- 🖥️ Real-time webcam preview
+## 🚀 Features
+
+- 😀 Real-time webcam feed
+- 👤 Face detection using MediaPipe Face Mesh
+- 😊 Smile detection based on facial landmarks
+- 📷 Automatically captures an image when a smile is detected
+- ⚡ Fast and lightweight implementation
+- 💻 Simple and easy-to-use interface
 
 ---
 
@@ -21,7 +23,7 @@ Automatically captures a photo whenever the user smiles using **Python**, **Open
 
 ---
 
-## 📂 Project Structure
+## 📁 Project Structure
 
 ```
 Caught/
@@ -36,20 +38,20 @@ Caught/
 
 ## 📦 Installation
 
-### Clone the repository
+### 1. Clone the repository
 
 ```bash
 git clone https://github.com/a-mishra27/Caught.git
 cd Caught
 ```
 
-### Create a virtual environment
+### 2. Create a virtual environment
 
 ```bash
 python -m venv venv
 ```
 
-### Activate the environment
+### 3. Activate the virtual environment
 
 #### Windows
 
@@ -57,13 +59,13 @@ python -m venv venv
 venv\Scripts\activate
 ```
 
-#### Linux/macOS
+#### Linux / macOS
 
 ```bash
 source venv/bin/activate
 ```
 
-### Install dependencies
+### 4. Install dependencies
 
 ```bash
 pip install -r requirements.txt
@@ -79,40 +81,68 @@ python smiling_selfie.py
 
 ---
 
-## 📸 How It Works
+## 🧠 How It Works
 
 1. Opens the webcam.
 2. Detects the user's face using MediaPipe Face Mesh.
 3. Tracks facial landmarks around the mouth.
-4. Measures the distance between mouth landmarks.
-5. Detects a smile when the distance exceeds a threshold.
-6. Automatically captures and saves the image.
+4. Measures the distance between selected mouth landmarks.
+5. Detects a smile based on the landmark distance.
+6. Automatically captures the image when the smile threshold is reached.
 
 ---
 
 ## 📚 Dependencies
 
-- OpenCV
-- MediaPipe
+```
+opencv-python
+mediapipe==0.10.21
+```
 
-
-Install manually if needed:
+Or install manually:
 
 ```bash
-pip install opencv-python mediapipe pyautogui
+pip install opencv-python mediapipe==0.10.21
 ```
 
 ---
 
-## 🎯 Future Improvements
+## 📈 Future Enhancements
 
-- Multiple face detection
-- Smile confidence score
-- Countdown before capture
-- Automatic image enhancement
-- GUI using Tkinter or PyQt
-- Save captured images with timestamps
-- Live smile percentage indicator
+- 📸 Save images with timestamps
+- 😀 Smile confidence indicator
+- 👥 Multiple face detection
+- ⏳ Countdown before capture
+- 🎨 Modern graphical user interface
+- ☁️ Cloud image storage
+- 📱 Mobile application support
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome!
+
+1. Fork the repository
+2. Create a new branch
+
+```bash
+git checkout -b feature-name
+```
+
+3. Commit your changes
+
+```bash
+git commit -m "Added new feature"
+```
+
+4. Push to the branch
+
+```bash
+git push origin feature-name
+```
+
+5. Open a Pull Request
 
 ---
 

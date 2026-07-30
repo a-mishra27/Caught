@@ -119,11 +119,6 @@ pip install opencv-python mediapipe==0.10.21
 
 ---
 
-
-## 📄 License
-
-This project is licensed under the MIT License.
-
 ---
 
 ## 👩‍💻 Author
